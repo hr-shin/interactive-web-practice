@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        .box-container { 
+            display: flex;
+        }
+        .box {
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: cornsilk;
+            border: 3px teal;
+            border-style: dotted dashed solid double;
+            transition: 1s cubic-bezier(0.9,-0.65, 0, 1.76);
+        }
+        .box:hover {
+            background-color: rgb(243, 194, 71);
+            transform: rotate(15deg) skew(15deg) translate(0px, 15px);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Transition</h1>
+    <br>
+    <br>
+    <br>
+    <div class="box-container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <br>
+    <br>
+</body>
+</html>
