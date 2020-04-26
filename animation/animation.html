@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        @keyframes sample-animation {
+            0% {
+                transform: translate(0, 0);   
+                background-color: rgb(230, 230, 230); 
+            }
+            40% {
+                transform: translate(400px, 200px);
+            }
+            100% {
+                transform: translate(800px, 0);
+                background-color:  rgb(0, 201, 168);
+            }
+        }
+    .circle {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        border: 7px solid rgb(0, 201, 168);
+        background-color: rgb(230, 230, 230);
+        border-radius: 50%;
+        animation: sample-animation 2s linear infinite alternate-reverse;
+    }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation</h1>
+    <br>
+    <br>
+    <br>
+    <div class="circle"></div>
+</body>
+</html>
